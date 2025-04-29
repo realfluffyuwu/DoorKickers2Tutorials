@@ -1,0 +1,4 @@
+@firearm_vulcan_ff_name=Normal Vulcan
+@firearm_vulcan_ff_desc=Just a Regular Vulcan\nThis is the Second Line\nThis is the Third Line
+@firearm_vulcanSup_ff_name=Suppressed Vulcan
+@firearm_vulcanSup_ff_desc=A Cool Suppressed Vulcan\nThis is the Second Line\nThis is the Third Line

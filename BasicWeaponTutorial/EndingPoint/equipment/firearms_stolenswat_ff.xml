@@ -1,0 +1,176 @@
+<Equipment>
+
+	<!-- Vulcan -->
+
+	<Bind eqp="Vulcan_ff">
+		<to name="uf_helios"/>
+
+		<to name="762x39FMJM43_VulcanNWS"/>
+		<to name="762x39FMJ7N23_VulcanNWS"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="M150RCO"/>
+	</Bind>
+	<Firearm name="Vulcan_ff" inventoryBinding="PrimaryWeapon" category="usrifle" unlockCost="10"
+			tooltip="@firearm_vulcan_ff_name"
+			description="@firearm_vulcan_ff_desc"
+			img="data/models/weapons/vulcan_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-4"/>
+		<RenderObject3D model="data/models/weapons/vulcan.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/vulcan.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="2650"
+			reloadEmptyTime="3800"
+			changeInTime="950"
+			changeOutTime="950"
+			readyTime="350"
+			guardTime="160"
+
+			accuracyStart="120"
+			accuracyEnd="40"
+			accuracyStartDist="7"
+			accuracyEndDist="40"
+
+			suppressionScale="1.09"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_762x39_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="type56_mag"
+			suppressedSwitch="Vulcan Sup_ff"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="40.0"
+			ai_rangeMax="100.0"
+			ai_stopWhenShooting="false"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="NWS_RifleUntrainedAutoFire" rangeMeters="20"/>
+			<AttackType name="NWS_RifleControlledBurst" rangeMeters="20" disabled="true"/>
+			<AttackType name="NWS_VulcanFastFire" rangeMeters="20" disabled="true"/>
+			<AttackType name="NWS_VulcanFastFireMedium" rangeMeters="30" disabled="true"/>
+			<AttackType name="NWS_RifleUntrainedAutoFireLong" rangeMeters="44"/>
+			<AttackType name="NWS_CarbineAimedFireLong" rangeMeters="44" disabled="true"/>
+			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> 
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="vulcan_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Bind eqp="Vulcan Sup_ff">
+		<to name="uf_helios"/>
+
+		<to name="762x39FMJM43_VulcanNWSSup"/>
+		<to name="762x39FMJ7N23_VulcanNWSSup"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="M150RCO"/>
+	</Bind>
+	<Firearm name="Vulcan Sup_ff" inventoryBinding="PrimaryWeaponMuzzle"  category="usrifle" unlockCost="2"
+			tooltip="@firearm_vulcanSup_ff_name"
+			description="@firearm_vulcanSup_ff_desc"
+			img="data/models/weapons/vulcan_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-4"/>
+		<RenderObject3D model="data/models/weapons/vulcan.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/vulcan.dds"/>
+		<RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			cyclicReload="0"
+			reloadTime="2670"
+			reloadEmptyTime="3820"
+			changeInTime="1000"
+			changeOutTime="1000"
+			readyTime="375"
+			guardTime="150"
+
+			accuracyStart="120"
+			accuracyEnd="40"
+			accuracyStartDist="7"
+			accuracyEndDist="40"
+
+			suppressionScale="1.09"
+		/>
+
+
+		<Params
+			caliberInfoText="@firearm_caliber_762x39_name"
+			operationInfoText="@firearm_operation_semifull_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="type56_mag"
+			suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+			suppressedSwitch="Vulcan_ff"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="40.0"
+			ai_rangeMax="100.0"
+			ai_stopWhenShooting="false"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="NWS_RifleUntrainedAutoFire" rangeMeters="21"/>
+			<AttackType name="NWS_RifleControlledBurst" rangeMeters="21" disabled="true"/>
+			<AttackType name="NWS_VulcanFastFire" rangeMeters="21" disabled="true"/>
+			<AttackType name="NWS_VulcanFastFireMedium" rangeMeters="30" disabled="true"/>
+			<AttackType name="NWS_RifleUntrainedAutoFireLong" rangeMeters="44"/>
+			<AttackType name="NWS_CarbineAimedFireLong" rangeMeters="44" disabled="true"/>
+			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+		</MuzzleFlash>
+
+		<Sounds> 
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="vulcansup_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+</Equipment>
