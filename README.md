@@ -25,8 +25,8 @@ If you don't know what any of that Means don't worry, You can just click the `Do
 
 ### Completed 
 [X] [Basic Unit Tutorial](https://www.youtube.com/watch?v=362xKMEQhb4) (although I plan to remake it)  
-[X] [Basic Weapon Tutorial](https://www.youtube.com/watch?v=Jh-w9dqKB0E)
-[ ] [Basic Patch Tutorial]
-[ ] [Intermediate Doctrine Tutorial]
-[ ] [Intermediate Custom Deploy Tutorial]
-[ ] [Intermediate Weapon Modeling Tutorial]
+[X] [Basic Weapon Tutorial](https://www.youtube.com/watch?v=Jh-w9dqKB0E)  
+[ ] [Basic Patch Tutorial]  
+[ ] [Intermediate Doctrine Tutorial]  
+[ ] [Intermediate Custom Deploy Tutorial]  
+[ ] [Intermediate Weapon Modeling Tutorial]  
